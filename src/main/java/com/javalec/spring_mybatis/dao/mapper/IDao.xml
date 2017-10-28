@@ -10,12 +10,12 @@
 	
 	
 	<insert id="writeDao">
-		
+		INSERT INTO BOARD (MID, MWRITER, MCONTENT) VALUES (BOARD_SEQ.NEXTVAL, #{param1}, #{param2})
 	</insert>
 	
 	
 	<delete id="deleteDao">
-	
+		DELETE FROM BOARD WHERE MID = #{param1}
 	</delete>
 	
 	
